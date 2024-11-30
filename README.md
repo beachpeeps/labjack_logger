@@ -30,6 +30,7 @@ The program uses a JSON configuration file to define its settings. Below is an e
 
 ```json
 {
+    "project_name": "MyLabjackProject",
     "serial_number": "123456789",
     "channels": ["AIN0", "AIN1", "AIN2"],
     "slopes": {
@@ -53,6 +54,7 @@ The program uses a JSON configuration file to define its settings. Below is an e
 ```
 
 ### Configuration Fields
+- **`project_name`**: Optional. A project name. If not specified, the program will use Channel_Averages.
 - **`serial_number`**: Optional. The serial number of the LabJack device. If not specified, the program will connect to any available device.
 - **`channels`**: A list of analog input channels to record (e.g., `AIN0`, `AIN1`).
 - **`slopes`**: A dictionary of slopes for unit conversion, applied to each channel.
