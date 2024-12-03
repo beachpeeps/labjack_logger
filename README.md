@@ -32,21 +32,24 @@ The program uses a JSON configuration file to define its settings. Below is an e
 {
     "project_name": "MyLabjackProject",
     "serial_number": "123456789",
-    "channels": ["AIN0", "AIN1", "AIN2"],
+    "channels": ["AIN0", "AIN1", "AIN2", "TEMPERATURE_DEVICE_K"],
     "slopes": {
         "AIN0": 100.0,
         "AIN1": 200.0,
-        "AIN2": 50.0
+        "AIN2": 50.0,
+        "TEMPERATURE_DEVICE_K": 1.0
     },
     "offsets": {
         "AIN0": 5.0,
         "AIN1": 10.0,
-        "AIN2": 0.0
+        "AIN2": 0.0,
+        "TEMPERATURE_DEVICE_K": -273.15
     },
     "labels": {
         "AIN0": "Current",
         "AIN1": "Voltage",
-        "AIN2": "Temperature"
+        "AIN2": "Temperature",
+        "TEMPERATURE_DEVICE_K": "InternalTemperatureC"
     },
     "sampling_rate": 2.0,
     "averaging_period": 15
